@@ -190,7 +190,7 @@ class MonitorPreco:
 
 self = MonitorPreco()
 
-schedule.every(30).second.do(self.tela_pesquisa)
+schedule.every(1).minute.do(self.tela_pesquisa)
 print(f'Próximo agendamento irá ocorrer às {schedule.next_run()}')
 while True:
     schedule.run_pending()
